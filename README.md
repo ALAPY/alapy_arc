@@ -12,4 +12,5 @@ We see the minimum reduction in file size over gziped fastq file (fastq.gz) of 1
 License
 -
 By installing and/or using this software you agree to the license agreement located at [http://alapy.com/alapy-compressor-eula/](http://alapy.com/alapy-compressor-eula/)
-Copyright © 2017 ALAPY Inc. All rights reserved.
+
+Copyright © 2017 [ALAPY Inc.](http://alapy.com/) All rights reserved.
