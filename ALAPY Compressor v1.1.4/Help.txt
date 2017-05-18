@@ -1,0 +1,64 @@
+ALAPY Compressor - high throughput genetics data compression tool
+
+USAGE
+  alapy [OPTION] [FILE] [OPTION]...
+
+SYNOPSIS
+  alapy [-c --compress] [-d --decompress] [FILE] [-o --outdir] [-n --name] [-q --quiet]
+
+DESCRIPTION
+Compress .fastq or .fastq.gz FILE to .ac format or decompress .ac FILE to fastq.gz file
+with the exact copy of the original fastq file contents. By default, compress or
+decompress FILE in-place leaving original file intact. By default lossless ALAPY
+Compressor algorithm is used. You can specify output directory (this directory must exist
+as the program will not create it). You can also change output file name. By default the
+program outputs progress information to stdout but it can be suppressed.
+
+OPTIONS
+The options for the program are as follows:
+
+-h --help
+Print this help and exit
+
+-v --version
+Print the version of the program and exit
+
+-c --compress
+Compress your fastq or fastq.gz file to ALAPY Compression format .ac file. Use "-c -" to
+pass input data from stdin.
+
+-d --decompress
+Decompress your .ac file to fastq or fastq.gz file. Use "-" as the last option instead of
+--outdir to redirect output FASTQ records to stdout.
+
+-o --outdir
+Create all output files in the specified output directory. Please note that this directory
+must exist as the program will not create it. If this option is not set then the output
+file for each file is created in the same directory as the file which was processed. If
+output file already exists in place the name of the output file will be changed by adding
+the output file version.
+
+-n --name
+Rename your file after progress
+
+-q --quiet
+Suppress all progress messages on stdout and report errors only.
+
+EXAMPLES
+We tested ALAPY Compressor on a number of public .fastq.gz files and found 1.5 to 3 times
+compression ration over gziped fastq.gz files. Examples of ALAPY Compressor usage can be
+found at FAQ page for ALAPY Compressor at http://alapy.com/faq/
+
+We would love to know compression ratio for your files. Could you please share it with us
+at compressor@alapy.com
+
+BUGS
+Could you please report any bugs you found in ALAPY Compressor to bugs@alapy.com or at
+www.alapy.com via the REPORT A BUG contact form on
+http://alapy.com/services/alapy-compressor/
+
+PIPELINE INTEGRATION AND OTHER INQUIRIES
+Please write to us at info@alapy.com regarding ALAPY Compressor integration into your
+workflows and pipelines, about other data formats compression and all other inquiries.
+Thank you.
+Enjoy!
