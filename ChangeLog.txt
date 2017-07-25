@@ -1,32 +1,22 @@
 Version 1.1.4
-	* fixed temporary data cleaning on SIGPIPE
+    * Fixed temporary data cleaning on SIGPIPE
+
 Version 1.1.3
-	* fixed temporary data cleaning on SIGINT (Cntrl+C), SIGTERM and SIGABRT signals
+    * Fixed temporary data cleaning on SIGINT (Cntrl+C), SIGTERM and SIGABRT signals
+    * Fixed output file name for cases of stdin compression with no name specified with -n option
 
-	* fixed output file name for cases of stdin compression with no name specified with -n option
 Version 1.1
-
-	* Added ability to output results of decompression to stdout (see help for the -d / - decompress option)   
-	
-* Added ability to compress data from stdin (see help for the -c / - compress option)    
-
-	* Changed input validation module for stdin/stdout support   
-
-	* Improved synchronization of threads (compression speed increased on average by 15%)
-	
-* Changed data decompression module (decompression speed on average increased by 30%)
-
-	* Optimized intermediate data decompression to write directly to output file or stdout
-
-	* Fixed end of line characters handling
-* Fixed comparison of reads’ headers and comments
+    * Added ability to output results of decompression to stdout (see help for the -d / - decompress option)   
+    * Added ability to compress data from stdin (see help for the -c / - compress option)    
+    * Changed input validation module for stdin/stdout support   
+    * Improved synchronization of threads (compression speed increased on average by 15%)
+    * Changed data decompression module (decompression speed on average increased by 30%)
+    * Optimized intermediate data decompression to write directly to output file or stdout
+    * Fixed end of line characters handling
+    * Fixed comparison of reads headers and comments
 
 Version 1.0
-	
-* Initial version
-
-	* Compression and decompression of single files
-
-	* Change output directory and/or output file name
-
-	* Add version to output file if it already exists
+    * Initial version
+    * Compression and decompression of single files
+    * Change output directory and/or output file name
+    * Add version to output file if it already exists
