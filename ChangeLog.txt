@@ -1,3 +1,9 @@
+Version 1.2.0
+    * Added compresion level option (-l/--level):
+       * b/best - best compression ratio, .ac file is 1.5-4 times smaller than with gzip, but 4-6 times slower than gzip, requires 1500MB of memory
+       * m/medium - medium level of compression (3-5% bigger .ac file than on best level), 1.2-1.8 slower than gzip, requires 100MB of memory (default)
+       * f/fast - fastest compression, 0.5-1.4 of gzip speed, .ac file is 4-10% bigger than on best level, requires 100MB of memory
+
 Version 1.1.4
     * Fixed temporary data cleaning on SIGPIPE
 
